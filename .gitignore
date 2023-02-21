@@ -363,4 +363,5 @@ poetry.toml
 
 .xml
 .idea
+.DS_Store
 # End of https://www.toptal.com/developers/gitignore/api/pycharm,macos,visualstudiocode,python,java
