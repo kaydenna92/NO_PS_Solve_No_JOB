@@ -23,7 +23,7 @@ def solution(numbers):
     for i in range(len(answer)):
         combination.append(sum(answer[i]))
     
-    return sorted(list(set(combination)))
+    return sorted(list(set(combination))) # sorted() 함수가 list를 반환하기 때문에 list로 변환할 필요가 없음
 
 
 def solution2(numbers):
@@ -32,6 +32,11 @@ def solution2(numbers):
         for k in range(i + 1, len(numbers)):
             answer.append(numbers[i] + numbers[k])
 
+    # for i in range(len(numbers)):
+    #     for k in range(len(numbers)):
+    #         if i != k:
+    #             answer.append(numbers[i] + numbers[k])
+    
     return sorted(set(answer))
 
 print(solution2(numbers))
