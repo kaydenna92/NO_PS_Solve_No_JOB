@@ -1,11 +1,10 @@
 def solution(a, b, n):
     answer = 0
-    
-    while True:
-        if n < a: 
-            break
-        n = n // 2
-        answer += n
-        
+
+    while n >= a:
+        answer += b
+        n = n - a + b
     
     return answer
+
+print(solution(2, 1, 20))
