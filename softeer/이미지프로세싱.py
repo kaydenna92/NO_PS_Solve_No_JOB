@@ -4,8 +4,8 @@ input = sys.stdin.readline
 def bfs(y, x, new_color, arr):
     que = deque()
     que.append([y, x])
-    past_color = arr[y][x]
-    arr[y][x] = new_color
+    past_color = arr[y][x] # 기존 색상 정보 저장
+    arr[y][x] = new_color # 시작 위치 색상 변경
     visited = [[False] * W for _ in range(H)]
 
     # 상 하 좌 우
@@ -36,7 +36,7 @@ Q = int(input())
         
 for i in range(Q):
     i, j, c = map(int, input().split())
-    bfs(i - 1, j - 1, c, image)
-
+    bfs(i - 1, j - 1, c, image) # 인덱스 처리(인덱스는 0부터 시작)
 
 print_image()
+
