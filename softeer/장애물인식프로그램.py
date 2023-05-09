@@ -40,8 +40,8 @@ def main():
             if block[i][k] != 0 and visited[i][k] == 0: # 장애물인데 마주치지 않았을 때, find_block 실행
                 answer.append(reconize_block(i, k, block, N, visited))
 
-    answer.sort()
-    print(len(answer))
+    answer.sort() 
+    print(len(answer)) # 연결된 장애물의 수를 카운트해 append 한 것이므로, 길이가 장애물의 종류 수
     for i in answer:
         print(i)
     
