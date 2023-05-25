@@ -32,3 +32,5 @@ for i in range(1, N):
     B_Line[i] = min(B_Line[i - 1] + b, A_Line[i - 1] + atob + b)
 
 print(min(A_Line[N - 1], B_Line[N - 1]))
+
+
