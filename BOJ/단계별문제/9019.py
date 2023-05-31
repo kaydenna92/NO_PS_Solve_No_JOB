@@ -28,6 +28,7 @@ def S(number):
 
 
 def L(number):
+    # ------------------시간초과--------------------
     # from collections import deque
     # number = str(number)
     # temp = deque([0] * 4)
@@ -46,6 +47,8 @@ def L(number):
     # temp.append(left)
 
     # return int(''.join(map(str, temp)))
+    # -----------------------------------------------
+
     first = number % 1000
     end = number // 1000
     temp = first * 10 + end
@@ -53,7 +56,8 @@ def L(number):
     return temp
 
 def R(number):
-    # from collections import deque
+    # ------------------시간초과--------------------
+    # from collections import deque 
     # number = str(number)
     # temp = deque([0] * 4)
 
@@ -71,6 +75,8 @@ def R(number):
     # temp.appendleft(right)
 
     # return int(''.join(map(str, temp)))
+    # -----------------------------------------------
+
     first = number % 10
     end = number // 10
     temp = first * 1000 + end
